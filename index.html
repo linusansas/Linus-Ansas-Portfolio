@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2d2d37b7b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Linus Ansas portfolio</title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Developer</p>
+            <h1>Hi, I'm <span>Linus</span><br> Web enthusiast</h1>
+        </div>
+    </div>
+</div>
+
+<!------ About ------>
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae repellendus vitae molestiae ex libero possimus. Blanditiis neque voluptatum, veniam eum omnis maxime animi, vitae cupiditate eius iste natus officia optio.</p>
+                    
+                <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="experience">
+                    <ul>
+                        <li><span>Budbee AB | 2019-2023</span><br>Operation region manager<br></li>
+                        <li><span>Textalk AB | 2016-2018</span><br>Second line support</li>
+                        <li><span>iStone AB | 2015-2016</span><br>Technical consultant</li>
+                    </ul>
+                </div>
+                
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Frontend developer | 2023-2025</span><br>Medieinstitutet</li>
+                        <li><span>Informatics | 2012-2015</span><br>Halmstad University</li>
+                        <li><span>Technical design | 2007-2010</span><br>Framtidsgymnasiet</li>
+                    </ul>
+                </div>
+                <a href="images/Linus Ansas CV 2023.pdf" target="_blank" download class="btn">Download CV</a>
+               </div>
+        </div>
+    </div>
+</div>
+
+<!------ Services ------>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-object-group"></i>
+                <h2>UI/UX design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music production</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------ Portfolio ------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>UX Project</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>E-commerce site</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!------ Contact ------>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> linusansas@gmail.com</p>
+                <p><i class="fa-solid fa-phone-flip"></i> +46723719765</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/linus-ansas-2a65b792"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/linusansas/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://open.spotify.com/artist/3mtCnJMcz4a7ecHQtbxp4E?si=6ppcmN3bTbWgC7NLaCGLGQ"><i class="fa-brands fa-spotify"></i></a>
+                    <a href="https://open.spotify.com/artist/3mtCnJMcz4a7ecHQtbxp4E?si=6ppcmN3bTbWgC7NLaCGLGQ"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2023 Linus Ansas. All rights reserved.</p>
+    </div>
+</div>
+
+<!------ Script! ------>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
