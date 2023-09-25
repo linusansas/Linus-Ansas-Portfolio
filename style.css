@@ -379,6 +379,16 @@ form .btn2{
     color: #ababab;
 }
 
+/* ------ Projects ------ */
+
+.projects-col-1{
+    flex-basis: 50%;
+}
+
+.projects-col-2{
+    flex-basis: 50%;
+}
+
 /* ------ CSS for responsive ------ */
 
 nav .fa-solid{
